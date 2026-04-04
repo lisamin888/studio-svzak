@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:studio-svzak.webflow.io)",
+      "Bash(npx create-next-app@latest:*)"
+    ]
+  }
+}
