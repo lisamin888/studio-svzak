@@ -2,11 +2,25 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const LOGO_URL = "/common/logo.webp";
 const INSTA_ICON_URL = "/common/insta-icon.webp";
 
+const navLinks = [
+  { href: "/about", label: "About" },
+  { href: "/", label: "Works" },
+  { href: "/contact", label: "Contact" },
+];
+
 export default function SiteHeader() {
+  const pathname = usePathname();
+
+  const isActive = (href: string) => {
+    if (href === "/") return pathname === "/" || pathname.startsWith("/works");
+    return pathname === href;
+  };
+
   return (
     <section className="header-section">
       {/* logo + headline */}
@@ -44,8 +58,8 @@ export default function SiteHeader() {
             className="header-subheading"
             style={{
               marginBottom: 0,
-              fontFamily: "'NanumSquareNeoTTF Cbd', 'NanumSquareNeoBold', Arial, sans-serif",
-              fontWeight: 400,
+              fontFamily: "'NanumSquareNeoTTF Cbd', 'NanumSquareNeo', Arial, sans-serif",
+              fontWeight: 600,
             }}
           >
             로고와 키비주얼을 포함한 브랜드 아이덴티티 개발과 브랜드의 서비스
@@ -61,11 +75,16 @@ export default function SiteHeader() {
           style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}
         >
           <div className="header-nav-menu">
-            <Link href="/about">About</Link>
-            <Link href="/">
-              <span>Works</span>
-            </Link>
-            <Link href="/contact">Contact</Link>
+            {navLinks.map(({ href, label }) => (
+              <Link
+                key={href}
+                href={href}
+                className="nav-link"
+                style={{ opacity: isActive(href) ? 1 : 0.4 }}
+              >
+                {label}
+              </Link>
+            ))}
           </div>
 
           <div className="header-nav-insta">

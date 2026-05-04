@@ -16,33 +16,25 @@ const processSteps = [
   { num: "(05)", en: "Final Review\nRefinement", ko: "최종 리뷰 및 조율", last: true },
 ];
 
+const H1_STYLE = {
+  paddingTop: 0,
+  paddingBottom: 10,
+  fontFamily: "'Pretendard Variable', Pretendard, Arial, sans-serif",
+  fontSize: 38,
+  fontWeight: 700,
+  display: "block",
+} as const;
+
 export default function AboutPage() {
   return (
     <>
       <Separator />
 
-      {/* section-6 */}
-      <section
-        style={{
-          width: "90vw",
-          marginLeft: "auto",
-          marginRight: "auto",
-        }}
-      >
+      <section style={{ width: "90vw", marginLeft: "auto", marginRight: "auto" }}>
+
         {/* Block 1: 뭐 하는 곳 인가요? */}
-        <div style={{ padding: "0 5vw 10px" }}>
-          <h1
-            style={{
-              paddingTop: 0,
-              paddingBottom: 10,
-              fontFamily: "'Pretendard Variable', Pretendard, Arial, sans-serif",
-              fontSize: 38,
-              fontWeight: 700,
-              display: "block",
-            }}
-          >
-            뭐 하는 곳 인가요?
-          </h1>
+        <div style={{ padding: "60px 5vw 40px" }}>
+          <h1 style={H1_STYLE}>뭐 하는 곳 인가요?</h1>
           <p
             style={{
               marginTop: 10,
@@ -62,14 +54,14 @@ export default function AboutPage() {
           </p>
           <p
             style={{
-              display: "flex",
-              flexFlow: "row",
+              display: "block",
               marginTop: 0,
               marginBottom: "auto",
               paddingTop: 20,
               paddingBottom: 0,
               fontFamily: "'Pretendard Variable', Pretendard, Arial, sans-serif",
               fontSize: 18,
+              fontWeight: 600,
               lineHeight: "32px",
             }}
           >
@@ -111,19 +103,8 @@ export default function AboutPage() {
         <Separator />
 
         {/* Block 2: 뭘 할 수 있나요? */}
-        <div style={{ padding: "0 5vw 10px" }}>
-          <h1
-            style={{
-              paddingTop: 0,
-              paddingBottom: 10,
-              fontFamily: "'Pretendard Variable', Pretendard, Arial, sans-serif",
-              fontSize: 38,
-              fontWeight: 700,
-              display: "block",
-            }}
-          >
-            뭘 할 수 있나요?
-          </h1>
+        <div style={{ padding: "60px 5vw 40px" }}>
+          <h1 style={H1_STYLE}>뭘 할 수 있나요?</h1>
           <div className="about-services">
             <div style={{ paddingRight: "7vw" }}>
               <p
@@ -146,16 +127,11 @@ export default function AboutPage() {
                   lineHeight: "40px",
                 }}
               >
-                <strong>ㆍ</strong>Naming
-                <br />
-                <strong>ㆍ</strong>Slogan
-                <br />
-                <strong>ㆍ</strong>Brand Story
-                <br />
-                <strong>ㆍ</strong>Logo
-                <br />
-                <strong>ㆍ</strong>Bx System
-                <br />
+                <strong>ㆍ</strong>Naming<br />
+                <strong>ㆍ</strong>Slogan<br />
+                <strong>ㆍ</strong>Brand Story<br />
+                <strong>ㆍ</strong>Logo<br />
+                <strong>ㆍ</strong>Bx System<br />
                 <strong>ㆍ</strong>IR Deck
               </p>
             </div>
@@ -180,16 +156,11 @@ export default function AboutPage() {
                   lineHeight: "40px",
                 }}
               >
-                <strong>ㆍ</strong>Graphic Design
-                <br />
-                <strong>ㆍ</strong>Illustration
-                <br />
-                <strong>ㆍ</strong>Key Visual
-                <br />
-                <strong>ㆍ</strong>Art Work
-                <br />
-                <strong>ㆍ</strong>Label Design
-                <br />
+                <strong>ㆍ</strong>Graphic Design<br />
+                <strong>ㆍ</strong>Illustration<br />
+                <strong>ㆍ</strong>Key Visual<br />
+                <strong>ㆍ</strong>Art Work<br />
+                <strong>ㆍ</strong>Label Design<br />
                 <strong>ㆍ</strong>Motion Graphic
               </p>
             </div>
@@ -214,12 +185,9 @@ export default function AboutPage() {
                   lineHeight: "40px",
                 }}
               >
-                <strong>ㆍ</strong>SNS Contents
-                <br />
-                <strong>ㆍ</strong>Landing Page
-                <br />
-                <strong>ㆍ</strong>Banner
-                <br />
+                <strong>ㆍ</strong>SNS Contents<br />
+                <strong>ㆍ</strong>Landing Page<br />
+                <strong>ㆍ</strong>Banner<br />
                 <strong>ㆍ</strong>Detailed page
               </p>
             </div>
@@ -229,29 +197,18 @@ export default function AboutPage() {
         <Separator />
 
         {/* Block 3: 어떻게 일하나요? */}
-        <div style={{ padding: "0 5vw 10px" }}>
-          <h1
-            style={{
-              paddingTop: 0,
-              paddingBottom: 10,
-              fontFamily: "'Pretendard Variable', Pretendard, Arial, sans-serif",
-              fontSize: 38,
-              fontWeight: 700,
-              display: "block",
-            }}
-          >
-            어떻게 일하나요?
-          </h1>
+        <div style={{ padding: "60px 5vw 40px" }}>
+          <h1 style={H1_STYLE}>어떻게 일하나요?</h1>
           <p
             style={{
-              display: "flex",
-              flexFlow: "row",
+              display: "block",
               marginTop: 0,
               marginBottom: "auto",
               paddingTop: 20,
               paddingBottom: 0,
               fontFamily: "'Pretendard Variable', Pretendard, Arial, sans-serif",
               fontSize: 18,
+              fontWeight: 600,
               lineHeight: "32px",
             }}
           >
@@ -285,17 +242,10 @@ export default function AboutPage() {
             execution.
           </p>
 
-          {/* div-block-14: process steps */}
           <div className="about-process">
             {processSteps.map((step, i) => (
               <div key={i} className="process-step">
-                {/* div-block-11 */}
-                <div
-                  style={{
-                    display: "flex",
-                    flexDirection: "column",
-                  }}
-                >
+                <div style={{ display: "flex", flexDirection: "column" }}>
                   <div
                     style={{
                       fontFamily: "'Pretendard Variable', Pretendard, Arial, sans-serif",
@@ -328,7 +278,6 @@ export default function AboutPage() {
                     {step.ko}
                   </p>
                 </div>
-                {/* arrow (not on last step) */}
                 {!step.last && (
                   <div className="process-arrow">
                     <Image
@@ -348,19 +297,8 @@ export default function AboutPage() {
         <Separator />
 
         {/* Block 4: Contact */}
-        <div style={{ padding: "0 5vw 10px" }}>
-          <h1
-            style={{
-              paddingTop: 0,
-              paddingBottom: 10,
-              fontFamily: "'Pretendard Variable', Pretendard, Arial, sans-serif",
-              fontSize: 38,
-              fontWeight: 700,
-              display: "block",
-            }}
-          >
-            Contact
-          </h1>
+        <div style={{ padding: "60px 5vw 60px" }}>
+          <h1 style={H1_STYLE}>Contact</h1>
           <p
             style={{
               color: "#2c2c2c",
@@ -379,6 +317,10 @@ export default function AboutPage() {
           <h1
             style={{
               fontFamily: "'Pretendard Variable', Pretendard, sans-serif",
+              fontSize: 40,
+              fontWeight: 700,
+              paddingTop: 16,
+              paddingBottom: 16,
             }}
           >
             E : studiosvzak@gmail.com
@@ -389,7 +331,6 @@ export default function AboutPage() {
               fontFamily: "'Pretendard Variable', Pretendard, Arial, sans-serif",
               fontSize: 18,
               lineHeight: "28px",
-              textDecoration: "none",
             }}
           >
             (04213) 서울특별시 마포구 마포대로 114
@@ -397,6 +338,7 @@ export default function AboutPage() {
             114, Mapo-daero 11-gil, Mapo-gu, Seoul
           </p>
         </div>
+
       </section>
     </>
   );
