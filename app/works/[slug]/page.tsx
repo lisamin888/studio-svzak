@@ -50,7 +50,7 @@ export default async function WorkDetailPage({ params }: Props) {
                   marginTop: 0,
                   paddingTop: 30,
                   fontFamily: "'Pretendard Variable', Pretendard, sans-serif",
-                  fontWeight: 500,
+                  fontWeight: 700,
                   fontSize: 16,
                 }}
               >
@@ -62,7 +62,7 @@ export default async function WorkDetailPage({ params }: Props) {
                   paddingTop: 20,
                   fontFamily: "'Pretendard Variable', Pretendard, Arial, sans-serif",
                   fontSize: 16,
-                  fontWeight: 500,
+                  fontWeight: 700,
                   lineHeight: "24px",
                 }}
               >

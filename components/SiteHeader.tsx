@@ -33,7 +33,7 @@ export default function SiteHeader() {
               paddingTop: 20,
               paddingBottom: 20,
               fontFamily: "'NanumSquareNeoTTF Brg', 'NanumSquareNeo', Arial, sans-serif",
-              fontWeight: 500,
+              fontWeight: 700,
             }}
           >
             야생의 브랜드 디렉터가 등장했다!

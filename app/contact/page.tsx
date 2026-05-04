@@ -37,8 +37,9 @@ export default function ContactPage() {
               alignItems: "center",
               marginBottom: 0,
               fontFamily: "'Pretendard Variable', Pretendard, Arial, sans-serif",
-              fontSize: 18,
-              lineHeight: "32px",
+              fontSize: 28,
+              fontWeight: 600,
+              lineHeight: "46px",
             }}
           >
             프로젝트 문의는 아래 메일로 부탁드립니다 :)
