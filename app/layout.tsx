@@ -3,7 +3,7 @@ import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 
-const BASE_URL = "https://studiosvzak.vercel.app";
+const BASE_URL = "https://svzak.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
@@ -42,7 +42,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
   name: "Studio SVZAK",
-  url: "https://studiosvzak.vercel.app",
+  url: "https://svzak.com",
   email: "studiosvzak@gmail.com",
   address: {
     "@type": "PostalAddress",

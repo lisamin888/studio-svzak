@@ -39,21 +39,39 @@ export default function SiteHeader() {
         </div>
 
         <div>
-          <h1
-            className="header-heading"
-            style={{
-              marginTop: 0,
-              marginBottom: 0,
-              paddingTop: 20,
-              paddingBottom: 20,
-              fontFamily: "'NanumSquareNeoTTF Brg', 'NanumSquareNeo', Arial, sans-serif",
-              fontWeight: 700,
-            }}
-          >
-            야생의 브랜드 디렉터가 등장했다!
-            <br />
-            스튜디오 스브작은 브랜드가 태어나는 첫 순간부터 함께 합니다.
-          </h1>
+          {pathname === "/" ? (
+            <h1
+              className="header-heading"
+              style={{
+                marginTop: 0,
+                marginBottom: 0,
+                paddingTop: 20,
+                paddingBottom: 20,
+                fontFamily: "'NanumSquareNeoTTF Brg', 'NanumSquareNeo', Arial, sans-serif",
+                fontWeight: 700,
+              }}
+            >
+              야생의 브랜드 디렉터가 등장했다!
+              <br />
+              스튜디오 스브작은 브랜드가 태어나는 첫 순간부터 함께 합니다.
+            </h1>
+          ) : (
+            <p
+              className="header-heading"
+              style={{
+                marginTop: 0,
+                marginBottom: 0,
+                paddingTop: 20,
+                paddingBottom: 20,
+                fontFamily: "'NanumSquareNeoTTF Brg', 'NanumSquareNeo', Arial, sans-serif",
+                fontWeight: 700,
+              }}
+            >
+              야생의 브랜드 디렉터가 등장했다!
+              <br />
+              스튜디오 스브작은 브랜드가 태어나는 첫 순간부터 함께 합니다.
+            </p>
+          )}
           <p
             className="header-subheading"
             style={{

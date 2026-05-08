@@ -3,7 +3,12 @@ import Image from "next/image";
 import Separator from "@/components/Separator";
 
 export const metadata: Metadata = {
-  title: "About – Studio SVZAK",
+  title: "About",
+  description: "스튜디오 스브작 소개 — 초기 브랜드를 위한 브랜딩 스튜디오. 로고, 브랜드 가이드, IR Deck, 키비주얼부터 패키지 디자인까지 브랜드의 첫 순간부터 함께합니다.",
+  openGraph: {
+    title: "About – Studio SVZAK",
+    description: "초기 브랜드를 위한 브랜딩 스튜디오. 로고, 브랜드 가이드, IR Deck, 키비주얼부터 패키지 디자인까지 함께합니다.",
+  },
 };
 
 const ARROW_ICON = "/common/arrow.webp";
@@ -35,6 +40,7 @@ export default function AboutPage() {
         {/* Block 1: 뭐 하는 곳 인가요? */}
         <div style={{ padding: "60px 5vw 40px" }}>
           <h1 style={H1_STYLE}>뭐 하는 곳 인가요?</h1>
+
           <p
             style={{
               marginTop: 10,
@@ -104,7 +110,7 @@ export default function AboutPage() {
 
         {/* Block 2: 뭘 할 수 있나요? */}
         <div style={{ padding: "60px 5vw 40px" }}>
-          <h1 style={H1_STYLE}>뭘 할 수 있나요?</h1>
+          <h2 style={H1_STYLE}>뭘 할 수 있나요?</h2>
           <div className="about-services">
             <div style={{ paddingRight: "7vw" }}>
               <p
@@ -198,7 +204,7 @@ export default function AboutPage() {
 
         {/* Block 3: 어떻게 일하나요? */}
         <div style={{ padding: "60px 5vw 40px" }}>
-          <h1 style={H1_STYLE}>어떻게 일하나요?</h1>
+          <h2 style={H1_STYLE}>어떻게 일하나요?</h2>
           <p
             style={{
               display: "block",
@@ -254,7 +260,7 @@ export default function AboutPage() {
                   >
                     {step.num}
                   </div>
-                  <h1
+                  <h3
                     style={{
                       marginTop: 10,
                       fontFamily: "'Pretendard Variable', Pretendard, sans-serif",
@@ -264,7 +270,7 @@ export default function AboutPage() {
                     }}
                   >
                     {step.en}
-                  </h1>
+                  </h3>
                   <p
                     style={{
                       marginTop: 10,
@@ -298,7 +304,7 @@ export default function AboutPage() {
 
         {/* Block 4: Contact */}
         <div style={{ padding: "60px 5vw 60px" }}>
-          <h1 style={H1_STYLE}>Contact</h1>
+          <h2 style={H1_STYLE}>Contact</h2>
           <p
             style={{
               color: "#2c2c2c",
@@ -314,7 +320,7 @@ export default function AboutPage() {
           >
             프로젝트 문의는 아래 메일로 부탁드립니다 :)
           </p>
-          <h1
+          <h2
             style={{
               fontFamily: "'Pretendard Variable', Pretendard, sans-serif",
               fontSize: 40,
@@ -324,7 +330,7 @@ export default function AboutPage() {
             }}
           >
             E : studiosvzak@gmail.com
-          </h1>
+          </h2>
           <p
             style={{
               color: "#2c2c2c",
@@ -335,7 +341,7 @@ export default function AboutPage() {
           >
             (04213) 서울특별시 마포구 마포대로 114
             <br />
-            114, Mapo-daero 11-gil, Mapo-gu, Seoul
+            114 Mapo-daero, Mapo-gu, Seoul
           </p>
         </div>
 

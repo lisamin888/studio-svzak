@@ -36,7 +36,7 @@ export default function OGImage() {
             color: "#71717A",
           }}
         >
-          studiosvzak.vercel.app
+          svzak.com
         </div>
       </div>
     ),

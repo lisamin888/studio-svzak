@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import worksData from "@/data/works.json";
 
-const BASE_URL = "https://studiosvzak.vercel.app";
+const BASE_URL = "https://svzak.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const workPages = worksData.map((work) => ({
