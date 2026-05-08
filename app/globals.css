@@ -97,8 +97,8 @@ img {
 @media screen and (max-width: 991px) {
   .works-grid           { grid-template-columns: repeat(2, 1fr); }
   .detail-layout        { flex-direction: column; gap: 40px; }
-  .detail-left          { width: 100%; }
-  .detail-sticky        { position: static; }
+  .detail-left          { width: 100%; position: static; }
+  .detail-sticky        { }
   .detail-right         { width: 100%; }
 }
 
