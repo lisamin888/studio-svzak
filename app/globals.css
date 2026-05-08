@@ -83,8 +83,8 @@ img {
 /* ─── Works detail ────────────────────────────────────── */
 .detail-section       { width: 90vw; margin-left: auto; margin-right: auto; padding: 20px 5vw 80px; }
 .detail-layout        { display: flex; column-gap: 60px; align-items: flex-start; }
-.detail-left          { width: 30%; flex-shrink: 0; align-self: stretch; }
-.detail-sticky        { position: sticky; top: 40px; }
+.detail-left          { width: 30%; flex-shrink: 0; position: sticky; top: 40px; align-self: flex-start; }
+.detail-sticky        { }
 .detail-right         { width: 70%; }
 
 /* ─── About ───────────────────────────────────────────── */

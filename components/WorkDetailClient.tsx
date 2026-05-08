@@ -219,6 +219,7 @@ export default function WorkDetailClient({ work, prevWork, nextWork }: Props) {
                     width={1920}
                     height={1080}
                     sizes="(max-width: 991px) 100vw, 60vw"
+                    priority={i === 0}
                     style={{ width: "100%", height: "auto", display: "block" }}
                   />
                 </div>
