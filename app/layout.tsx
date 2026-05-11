@@ -93,6 +93,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-TZ9W5BLZ');`,
           }}
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-7WQL5V0696"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="ga4"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-7WQL5V0696');`,
+          }}
+        />
       </body>
     </html>
   );
