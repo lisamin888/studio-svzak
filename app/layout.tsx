@@ -69,6 +69,18 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-7WQL5V0696"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-7WQL5V0696');`,
+          }}
+        />
       </head>
       <body style={{ maxWidth: "100vw", paddingLeft: 0, paddingRight: 0 }}>
         <noscript>
@@ -91,20 +103,6 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TZ9W5BLZ');`,
-          }}
-        />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-7WQL5V0696"
-          strategy="afterInteractive"
-        />
-        <Script
-          id="ga4"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-7WQL5V0696');`,
           }}
         />
       </body>
