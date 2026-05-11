@@ -25,7 +25,6 @@ const H1_STYLE = {
   paddingTop: 0,
   paddingBottom: 10,
   fontFamily: "'Pretendard Variable', Pretendard, Arial, sans-serif",
-  fontSize: 38,
   fontWeight: 700,
   display: "block",
 } as const;
@@ -35,11 +34,11 @@ export default function AboutPage() {
     <>
       <Separator />
 
-      <section style={{ width: "90vw", marginLeft: "auto", marginRight: "auto" }}>
+      <section style={{ width: "100%", maxWidth: "100%", boxSizing: "border-box" }}>
 
         {/* Block 1: 뭐 하는 곳 인가요? */}
-        <div style={{ padding: "60px 5vw 40px" }}>
-          <h1 style={H1_STYLE}>뭐 하는 곳 인가요?</h1>
+        <div className="about-section-block">
+          <h1 className="about-heading" style={H1_STYLE}>뭐 하는 곳 인가요?</h1>
 
           <p
             style={{
@@ -109,8 +108,8 @@ export default function AboutPage() {
         <Separator />
 
         {/* Block 2: 뭘 할 수 있나요? */}
-        <div style={{ padding: "60px 5vw 40px" }}>
-          <h2 style={H1_STYLE}>뭘 할 수 있나요?</h2>
+        <div className="about-section-block">
+          <h2 className="about-heading" style={H1_STYLE}>뭘 할 수 있나요?</h2>
           <div className="about-services">
             <div style={{ paddingRight: "7vw" }}>
               <p
@@ -203,8 +202,8 @@ export default function AboutPage() {
         <Separator />
 
         {/* Block 3: 어떻게 일하나요? */}
-        <div style={{ padding: "60px 5vw 40px" }}>
-          <h2 style={H1_STYLE}>어떻게 일하나요?</h2>
+        <div className="about-section-block">
+          <h2 className="about-heading" style={H1_STYLE}>어떻게 일하나요?</h2>
           <p
             style={{
               display: "block",
@@ -303,8 +302,8 @@ export default function AboutPage() {
         <Separator />
 
         {/* Block 4: Contact */}
-        <div style={{ padding: "60px 5vw 60px" }}>
-          <h2 style={H1_STYLE}>Contact</h2>
+        <div className="about-contact-block">
+          <h2 className="about-heading" style={H1_STYLE}>Contact</h2>
           <p
             style={{
               color: "#2c2c2c",

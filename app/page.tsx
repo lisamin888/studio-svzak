@@ -6,21 +6,8 @@ export default function WorksPage() {
   return (
     <>
       <Separator />
-      <section
-        style={{
-          width: "90vw",
-          margin: "0 auto",
-          padding: "60px 5vw 100px",
-        }}
-      >
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            columnGap: 40,
-            rowGap: 56,
-          }}
-        >
+      <section className="works-section">
+        <div className="works-grid">
           {worksData.map((work, i) => (
             <WorkCard key={work.id} work={work} index={i} />
           ))}

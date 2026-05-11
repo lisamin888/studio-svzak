@@ -14,7 +14,7 @@ export default function ContactClient() {
   };
 
   return (
-    <section style={{ width: "90vw", margin: "0 auto", padding: "60px 5vw 100px" }}>
+    <section style={{ width: "100%", maxWidth: "100%", boxSizing: "border-box", padding: "60px 5vw 100px" }}>
       <div style={{ display: "flex", flexDirection: "column", gap: 32 }}>
 
         {/* 문의 + 이메일 */}
