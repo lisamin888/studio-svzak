@@ -1,3 +1,7 @@
 {
-  "framework": "nextjs"
+  "framework": "nextjs",
+  "rewrites": [
+    { "source": "/pptlab", "destination": "https://svzaklab-master.vercel.app/" },
+    { "source": "/pptlab/:path*", "destination": "https://svzaklab-master.vercel.app/:path*" }
+  ]
 }
