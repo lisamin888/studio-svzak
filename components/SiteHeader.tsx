@@ -46,14 +46,12 @@ export default function SiteHeader() {
                 marginTop: 0,
                 marginBottom: 0,
                 paddingTop: 20,
-                paddingBottom: 20,
+                paddingBottom: 10,
                 fontFamily: "'NanumSquareNeoTTF Brg', 'NanumSquareNeo', Arial, sans-serif",
                 fontWeight: 700,
               }}
             >
               야생의 브랜드 디렉터가 등장했다!
-              <br />
-              스튜디오 스브작은 브랜드가 태어나는 첫 순간부터 함께 합니다.
             </h1>
           ) : (
             <p
@@ -62,17 +60,15 @@ export default function SiteHeader() {
                 marginTop: 0,
                 marginBottom: 0,
                 paddingTop: 20,
-                paddingBottom: 20,
+                paddingBottom: 10,
                 fontFamily: "'NanumSquareNeoTTF Brg', 'NanumSquareNeo', Arial, sans-serif",
                 fontWeight: 700,
               }}
             >
               야생의 브랜드 디렉터가 등장했다!
-              <br />
-              스튜디오 스브작은 브랜드가 태어나는 첫 순간부터 함께 합니다.
             </p>
           )}
-          <p
+          <h2
             className="header-subheading"
             style={{
               marginBottom: 0,
@@ -80,9 +76,8 @@ export default function SiteHeader() {
               fontWeight: 600,
             }}
           >
-            로고와 키비주얼을 포함한 브랜드 아이덴티티 개발과 브랜드의 서비스
-            소개, IR Deck을 함께 다룹니다.
-          </p>
+            로고 · 브랜드 아이덴티티 · 서비스 소개서 · IR Deck까지.<br />브랜드의 첫 출발과 함께합니다.
+          </h2>
         </div>
       </div>
 

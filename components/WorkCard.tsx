@@ -43,7 +43,7 @@ export default function WorkCard({ work, index }: Props) {
           src={work.thumbnail}
           alt={work.title}
           fill
-          sizes="(max-width: 479px) 100vw, (max-width: 991px) 50vw, 33vw"
+          sizes="(max-width: 767px) calc(100vw - 40px), (max-width: 991px) calc(50vw - 48px), calc(33vw - 48px)"
           style={{
             objectFit: "cover",
             transition: "transform 0.6s cubic-bezier(0.16,1,0.3,1)",
