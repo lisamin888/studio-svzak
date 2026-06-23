@@ -1,5 +1,25 @@
 [
   {
+    "id": 10,
+    "slug": "craft-beer",
+    "title": "Craft Beer Packaging & Illustration System",
+    "tags": "Key visual, Package, Illustraion",
+    "thumbnail": "/works/craft-beer/thumb.webp",
+    "year": "2020",
+    "duration": "Duration | 2020",
+    "description": "성수동을 중심으로 크래프트 맥주 문화가 빠르게 확산되던 시기, 한 크래프트 브루어리의 맥주 제품을 위한 라벨 디자인과 프로모션 아트워크를 작업했습니다.\n각 제품은 저마다의 개성과 스토리를 가지고 있었고, 이를 시각적으로 차별화하기 위해 핸드드로잉, 벡터 일러스트레이션, 타이포그래피 중심 그래픽 등 다양한 표현 방식을 실험했습니다.\n패키지에서 시작해 포스터, 코스터, 프로모션 그래픽으로 확장하며 브랜드의 다채로운 캐릭터를 구축했습니다.",
+    "images": [
+      "/works/craft-beer/01.webp",
+      "/works/craft-beer/02.webp",
+      "/works/craft-beer/03.webp",
+      "/works/craft-beer/04.webp",
+      "/works/craft-beer/05.webp",
+      "/works/craft-beer/06.webp",
+      "/works/craft-beer/07.webp"
+    ],
+    "descriptionEn": "Craft beer culture was rapidly spreading across Seoul's Seongsu district, and I designed product labels and promotional artwork for a craft brewery's beer lineup.\nEach beer carried its own character and story, so I experimented with a range of visual approaches — hand drawing, vector illustration, and typography-driven graphics — to give each one a distinct identity.\nWhat began as label and packaging design expanded into posters, coasters, and other promotional graphics, building out the brand's diverse cast of characters."
+  },
+  {
     "id": 1,
     "slug": "snaks",
     "title": "Snaks",
